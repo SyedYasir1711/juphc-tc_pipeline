@@ -5,7 +5,7 @@ metadata:
 spec:
   serviceAccountName: pipeline
   pipelineRef:
-    name: juphc-tc-pipeline
+    name: juphc-tc_pipeline
   params:
     - name: repo-url
       value: "https://github.com/ibm-developer-skills-network/zntwk-tax_calculator.git"

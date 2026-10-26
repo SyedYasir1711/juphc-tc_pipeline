@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:  
-  name: juphc-tc_pipeline
+  name: juphc-tc-pipeline
 spec:
   workspaces:
     - name: pipeline-workspace
@@ -55,8 +55,6 @@ spec:
       workspaces:
         - name: source
           workspace: pipeline-workspace
-        - name: dockerconfig
-          workspace: dockerconfig-ws
       taskRef:
         name: buildah
         kind: ClusterTask
